@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Video Browser
+
+The app was built with React and Redux Thunk to make a YouTube like video browsing app. The app preloads with surfing as the keyword but users can search anything they would like. Redux Thunk is used to make a call to the YouTube API and Redux manages state of the video list, selected video, search term, etc.
+
+Demo the app here https://barbone-video-browser.herokuapp.com/
 
 ## Available Scripts
 
