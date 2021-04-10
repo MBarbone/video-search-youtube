@@ -5,6 +5,6 @@ export default axios.create({
   params: {
     part: "snippet",
     maxResults: 5,
-    key: process.env.REACT_APP_YOUTUBE_API_KEY
-  }
+    key: "AIzaSyBebcyXaOoqVi8ZJFe6p7AYv3HUWXfKh88",
+  },
 });

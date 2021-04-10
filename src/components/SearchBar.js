@@ -2,14 +2,14 @@ import React from "react";
 
 class SearchBar extends React.Component {
   state = {
-    term: ""
+    term: "",
   };
 
-  onInputChange = event => {
+  onInputChange = (event) => {
     this.setState({ term: event.target.value });
   };
 
-  onFormSubmit = event => {
+  onFormSubmit = (event) => {
     event.preventDefault();
 
     this.props.onTermSubmit(this.state.term);
@@ -21,14 +21,14 @@ class SearchBar extends React.Component {
         <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="field">
             <label>Video Search</label>
-            <div class="ui action input">
+            <div className="ui action input">
               <input
                 type="text"
                 value={this.state.term}
                 onChange={this.onInputChange}
                 placeholder="Search.."
               />
-              <button class="ui button">Search</button>
+              <button className="ui button">Search</button>
             </div>
           </div>
         </form>
